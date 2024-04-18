@@ -1,11 +1,17 @@
-# Ignore compiled Python files
+# Ignore Python bytecode files
 *.pyc
 
-# Ignore virtual environment directory
+# Ignore Django migration files
+*/migrations/
+
+# Ignore the virtual environment directory
 venv/
 
-# Ignore log files
-*.log
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
 
-# Ignore macOS system files
-.DS_Store
+# Ignore local settings file
+vercel_app/local_settings.py
