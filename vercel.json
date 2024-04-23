@@ -2,12 +2,7 @@
     "builds": [
         {
             "src": "aikido/wsgi.py",
-            "use": "@vercel/python",
-            "functions": {
-                "api": {
-                    "runtime": "python3.8"
-                }
-            }
+            "use": "@vercel/python"
         }
     ],
     "routes": [
@@ -15,5 +10,10 @@
             "src": "/(.*)",
             "dest": "elevate/wsgi.py"
         }
-    ]
+    ],
+    "functions": {
+        "api": {
+            "runtime": "python3.8"
+        }
+    }
 }
