@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "aikido/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "elevate/wsgi.py"
+        }
+    ]
+}
